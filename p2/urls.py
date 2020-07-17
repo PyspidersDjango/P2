@@ -18,6 +18,9 @@ from django.urls import path
 from p2 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index,name='index'),
+    path('',views.index,name='index'),#path function is responsible for url mapping
+    #path('suffix',name of function,name=nameof mapping)
     path('home',views.home,name='home'),
+    path('html_demo1',views.html_demo1,name="html_demo1"),
+    path('html_demo2',views.html_demo2,name="html_demo2"),  
 ]
